@@ -1,8 +1,8 @@
-# 365Scores Test
+# Angular Hotels
 
 ### Installation
 
-`git clone https://github.com/rkreich/365scores-test`
+`git clone git@github.com:golubweb/angular-Hotels.git`
 
 `npm install` to install NPM modules
 
@@ -10,12 +10,10 @@
 
 * `jshint` on JS files
 * `sass` to compile SCSS files
-* `connect` to server on localhost:9005
-* `open` browser @ http://localhost:9005
+* `connect` to server on localhost:9006
+* `open` browser @ http://localhost:9006
 * `watch` JS and SCSS files
 
 ### More Info
 
 `index.html` contains the basic layout.
-
-`365scores.scss` is the SCSS file.# angular-365scores
