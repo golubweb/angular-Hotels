@@ -19,7 +19,7 @@ module.exports = function (grunt) {
 		sass: {
 			dist: {
 				files: {
-					'dist/365scores.css': 'assets/css/365scores.scss'
+					'dist/style.css': 'assets/css/style.scss'
 				}
 			}
 		},
@@ -53,7 +53,6 @@ module.exports = function (grunt) {
     });
     
     grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
@@ -61,6 +60,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-open');
 
 
-    grunt.registerTask('default', ['concat', 'copy', 'jshint', 'sass', 'connect', 'open', 'watch']);
+    grunt.registerTask('default', ['concat', 'jshint', 'sass', 'connect', 'open', 'watch']);
 
 };
