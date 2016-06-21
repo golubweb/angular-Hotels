@@ -1,0 +1,13 @@
+<div class="reviews">    
+    <div class="reviews-content" data-ng-repeat="item in itemReviews">
+        <figure>
+            <span data-ng-if="item.positive == true">+</span>
+            <span data-ng-if="item.positive == false">-</span>    
+        </figure>
+        
+        <div class="reviews-comment">
+            <h2 id="{{ item.hotel_id }}">{{ item.name }}</h2>
+            <p class="description">{{ item.comment }}</p>
+        </div>
+    </div>
+</div>

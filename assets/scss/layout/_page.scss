@@ -1,0 +1,169 @@
+.main {
+  width: $destop-width;
+  margin: 20px auto;
+  
+  .load_hotels {
+    margin: 0 auto 20px auto;
+    color: #484848;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    border: 1px solid #b0b0b0;
+    @include border-radius(6px);
+    background: #e3e3e3;
+  }
+  
+  .errorMsg {
+    padding: 20px;
+    @include border-radius(6px);
+    border: 1px solid #afafaf;
+    background: #e3e3e3;
+    
+    p {
+      color: #000;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+  }
+
+  article {
+    width: 100%;
+    display: table;
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid #afafaf;
+    @include border-radius(6px);
+    background: #f4f4f4;
+    
+    .figure {
+      width: 40%;
+      min-width: 35%;
+      min-height: 275px;
+      float: left;
+      display: block;
+      border-right: 1px solid #afafaf;
+      background: #e5e5e5;
+      
+      img {width: 100%; display: block;}
+    }
+    
+    .hotel_box {
+      width: 60%;
+      float: right;
+      padding: 20px;
+    }
+    
+    h2 {
+      color: #000;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: capitalize;
+      padding: 0 0 15px 0;
+    }
+    
+    h3 {
+      color: #484848;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: capitalize;
+      padding: 0 0 30px 0;
+    }
+    
+    ul[stars] {
+      display: table;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      
+      li {
+        width: 16px;
+        height: 12px;
+        float: left;
+        margin-right: 5px;
+        font-size: 19px;
+        line-height: 10px;
+        color: #afafaf;
+        
+        &.full {color: #000;}
+        &:last-child {margin: 0;}
+      }
+      
+    }
+    
+    .description {
+      color: #585858;
+      font-size: 13px;
+      padding: 0 0 30px 0;
+    }
+    
+    .reviews-hotels {
+      color: #484848;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      text-transform: capitalize;
+      padding: 12px 25px;
+      border: 1px solid #b0b0b0;
+      @include border-radius(6px);
+      background: #e3e3e3;
+    }
+    
+    .info {
+      float: right;
+      padding-right: 20px;
+      
+      .price {
+        display: block;
+        font-size: 36px;
+        color: #323232;
+        text-align: right;
+      }
+      .date {
+        font-size: 14px;
+        color: #323232;
+      }
+    }
+    
+    .reviews {
+      clear: both;
+      padding: 0 20px;
+      background: #bbbbbb;
+      
+      .reviews-content {
+        width: 100%;
+        display: table;
+        border-bottom: 1px solid #aaa9a9;
+        
+        figure {
+          width: 32px;
+          height: 32px;
+          float: left;
+          display: table;
+          margin-top: 35px;
+          text-align: center;
+          @include border-radius(50%);
+          background: #fff;
+          
+          span {
+            display: table-cell;
+            color: #777;
+            font-size: 16px;
+            font-weight: 800;
+            vertical-align: middle;
+          }
+        }
+        
+        .reviews-comment {
+          width: 95%;
+          float: right;
+          padding: 30px 0 0;
+        }
+        
+        &:last-child {border: none;}
+      }
+    }
+  }
+}

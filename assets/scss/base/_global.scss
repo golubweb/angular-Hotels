@@ -1,0 +1,30 @@
+@import '../helpers/variables';
+
+/*=========// Body */
+body {font-family: $font-open;}
+
+/*=========// Box Model */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*=========// Global Links */
+a {
+  font-family: $font-open;
+  text-decoration: none; 
+    
+  &:hover {text-decoration: none;}
+}
+
+/*=========// Global Paragraf */
+p {font-family: $font-open;}
+
+select::-ms-expand {
+    display: none;
+}
+
+/*=========// Select */
+select {-webkit-appearance: none; -moz-appearance: none; appearance: none;}
+input::-moz-focus-inner {border: 0; padding: 0;}

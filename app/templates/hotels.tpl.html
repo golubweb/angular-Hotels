@@ -1,0 +1,25 @@
+
+    <button class="load_hotels">Load Hotels</button>
+    
+    <div class="errorMsg" data-ng-show="error">{{ errorMsg }}</div>
+    
+    <div class="hotel_wrap" data-ng-if="itemsList > 0">
+        <article data-ng-repeat="item in hotels">
+            <figure class="figure"><img data-ng-src="{{ item.images[0] }}" alt="{{ item.name }}" /></figure>
+            
+            <div class="hotel_box">
+                <h2>{{ item.name }}</h2>
+                <h3>{{ item.city + ' - ' + item.country }}</h3>
+                
+                <ul stars="{{ item.stars }}"></ul>
+                <p class="description">{{ item.description }}</p>
+                
+                <p class="info">
+                    <span class="price">{{ item.price }} &#8364;</span>
+                    <span class="date">{{ item.dateStart + ' - ' + item.dateEnd }}</span>
+                </p>
+                
+                <button class="reviews-hotels" reviews="{{ item.id }}">Show Reviews</button>
+            </div>  
+        </article>
+    </div>
