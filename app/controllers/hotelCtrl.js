@@ -10,7 +10,7 @@ myApp.controller('hotelCtrl', ['$scope', '$compile', '$filter', '$document', '$t
 	
 	var init = function(){
 		$scope.error = true;
-		$scope.errorMsg = "Something failed!";
+		$scope.errorMsg = "Waiting for a response!";
 		
 		$scope.runAPI();
 	};
